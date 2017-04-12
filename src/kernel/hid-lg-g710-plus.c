@@ -56,7 +56,7 @@ static const u8 g710_plus_key_map[LOGITECH_KEY_MAP_SIZE] = {
 
 #define BIT_AT(var,pos) ((var) & (1<<(pos)))
 
-#if LINUX_VERSION_CODE >= KERNEL_VERSION(4,6,0)
+#if LINUX_VERSION_CODE >= KERNEL_VERSION(4,3,0)
 enum lg_g710_plus_leds{
 	G710_LED_M1 = 0,
 	G710_LED_M2 = 1,
@@ -81,7 +81,7 @@ struct lg_g710_plus_data {
 
     spinlock_t lock; /* lock for communication with user space */
 
-#if LINUX_VERSION_CODE >= KERNEL_VERSION(4,6,0)
+#if LINUX_VERSION_CODE >= KERNEL_VERSION(4,3,0)
     struct g710_led_s {
 		spinlock_t lock; /* lock */
         struct led_classdev cd;
