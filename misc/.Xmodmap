@@ -7,4 +7,5 @@ keycode 193 = XF86Launch5
 keycode 194 = XF86Launch6
 keycode 195 = XF86Launch7
 keycode 196 = XF86Launch8
-keycode 128 = XF86Launch9
+!keycode 128 = XF86Launch9 !Didn't work for G710(not plus) & 4.4.0-71-generic #92~14.04.1-Ubuntu SMP x86_64
+keycode 197 = XF86Launch9
